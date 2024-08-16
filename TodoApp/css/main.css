@@ -1,0 +1,41 @@
+/* reset */
+*{margin: 0; padding:0; font-family: "Inter", sans-serif; font-size: 12px; font-weight: 400;}
+html{color:#111; position:relative;}
+html, body{height:100%; overflow:hidden;}
+body{font-size:12px; line-height:18px; font-family: 'Noto Sans KR', sans-serif;}
+a, address, blockquote, br, fieldset, legend, label, form, input, select, textarea, button, cite, code, dl, dt, dd, h1, h2, h3, h4, h5, h6, p, div, iframe, ul, ol, li, hr, img {margin: 0; padding: 0;}
+a{color:#111; text-decoration: none;}
+img{border:none; vertical-align: top;}
+ul, ol{list-style:none;}
+address{font-style: normal;}
+input:focus{outline: none;}
+
+/* hyper link */
+a, a:link, a:visited, a:active, a:hover{text-decoration: none; color: inherit;}
+
+/* #todo_main 헤더 --------------------------------------------------------*/
+#todo_main{width: 100%; height: 50px; }
+.todoIn{width: 500px; margin: 0 auto; }
+
+.todoList{margin-top:70px;}
+.t_box{width: 500px; height: 40px; background: #000; margin-bottom:40px}
+.t_box .tit{color:#fff; font-size: 20px; line-height: 40px; margin-left:14px;}
+.t_box .txt{margin:20px 0 20px 14px; font-size: 14px; line-height: 14px; }
+
+.in_f{position: relative;}
+.in_f input{height: 30px; float:left; margin-top:15px; box-sizing: border-box; font-size: 14px; line-height: 14px;}
+.in_f input::after{display: block; content: ""; clear: both;}
+.in_f input[type="text"]{width: 450px; text-indent: 10px; border: 1px solid #ccc; border-radius: 5px 0 0 5px; border-right:none;}
+.in_f input[type="submit"]{width:50px; background: #000; color:#fff; border: none; border-radius: 0 5px 5px 0;}
+.in_f input[type="submit"]:hover{cursor: pointer;}
+
+
+/* ul 할일 목록 */
+.todo_list{position: absolute; top: 70px; left:0; border: 1px solid #ddd;border-radius: 7px; }
+.todo_list li{width:500px; border-bottom: 1px solid #ddd; height:30px; display: flex; justify-content: space-between; align-items: center; font-size: 14px; text-indent: 10px;}
+.todo_list li:last-of-type{border-bottom: none;}
+
+/* ul 할일 버튼 및 버튼 삭제*/
+.todo_list li button{margin-right:10px; color: #d9534f; border: none; border-radius: 3px; font-size:16px;cursor: pointer; font-family: "Roboto", sans-serif; font-weight:700; background-color: #fff;}
+.todo_list li button:hover{color:#d9534f;}
+

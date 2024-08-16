@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoList</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/main.js"></script>
+</head>
+<body>
+    <div id="todo_main">
+        <div class="todoIn">
+
+            <div class="todoList">
+                <div class="t_box">
+                    <h2 class="tit">ToDo List</h2><!-- tit -->
+                    <p class="txt">오늘 할일을 작성해 보세요.</p><!-- txt -->
+                </div><!-- t_box -->
+                
+                <div class="in_f">
+                    <form action="#" method="get" onsubmit="return checkTotalSearchForm( this )">	
+                        <input type="text" class="todo_input" placeholder="할일을 입력하세요." title="할일 입력칸" onkeydown="keyCodeCheck()">
+                        <input type="submit" class="add_btn" title="추가버튼" value="추가">
+                    </form>
+                    <ul class="todo_list"></ul><!-- todo_list -->
+                </div><!-- in_f -->
+                </div><!-- #todoList -->
+
+        </div><!-- #todoIn -->
+    </div><!-- #todo_main -->
+    
+</body>
+</html>
